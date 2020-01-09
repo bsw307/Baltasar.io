@@ -10,7 +10,7 @@ Summary: Sequoia
 # A scientific investigation
 
 ## Results
-Based on collected data, I have conclusively proven thatSequoia is the cutest dog
+Based on collected data, I have conclusively proven that Sequoia is the cutest dog. See below
 [![large]({static}/img/dog.png)]({static}/img/dog.png)
 
 
