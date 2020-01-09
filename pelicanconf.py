@@ -7,7 +7,7 @@ SITENAME = 'Sequoia'
 SITEURL = ''
 GITHUB_URL = "https://github.com/Baltasaurus"
 PATH = 'content'
-THEME = "/Users/baltasarsalamonwelwert/Projects/Sequoia/theme"
+THEME = "theme"
 
 STATIC_PATHS = ['img']
 PAGE_PATHS = ['pages']
