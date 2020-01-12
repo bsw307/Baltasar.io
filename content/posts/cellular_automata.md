@@ -82,10 +82,10 @@ This project originated as an attempt to make reusable program that generated ce
 ## How?
 The program below is written in javascript using the P5.JS library, which enables drawing the cells as well as embedding the file on this page.
 
-
+## Results
 <p style="text-align:center">	
 <iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"></iframe> 
 </p>
 
 ## Sources
-<sup>1</sup> [Conway's Game of Life](www.en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+<sup>1</sup> [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
