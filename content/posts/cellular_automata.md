@@ -56,6 +56,8 @@ Example:
 
     
 2. **Oscillators** - Changing patterns that return to the same shape given enough iterations.  
+![](../img/Oscillator1.png)
+![](../img/Oscillator2.png)
 
 Example:
 
