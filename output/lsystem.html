@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Lindenmayer Systems</title>
+ <!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--link rel="stylesheet" href="theme/css/rdark.css" /-->
+<link rel="stylesheet" type="text/css" href="theme/css/main.css" />
+
+    <!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+  });
+</script>
+
+<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script> -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+<body>
+    
+    <title></title>
+    
+<nav >
+  <div class="container" id="navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Sequoia</a>
+    </div>
+    <ul class="nav navbar-nav">
+            <li><b>|</b></li>
+            <li>
+                <a href="/welcome.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    
+<!-- Main Content -->
+ <div class="container" id="main">
+<div class="row">
+ <div class="col-md-12">
+     <h1><strong>Project Details | </strong>Lindenmayer Systems</h1>
+     <br>
+     <h4 style="padding-left: 7%; padding-right: 7%;"><p>An interactive cellular automata written in javascript</p></h4>
+     
+     
+     <div class="content">
+         <hr style="border-width: thin; border-color: black">
+         
+        <p>
+            <img src="theme/img/date3.png" style="height:25px" class="icon">  
+            
+            <strong> | Project Date -- </strong> 2019</p>
+         
+         
+         <p>
+                <img src="theme/img/skills2.png" style="height:25px" class="icon">             
+             <strong> | Skills Used -- </strong>
+        <a href="/natural-patterns.html">natural patterns</a> | 
+        <a href="/js.html">js</a> | 
+        <a href="/python.html">python</a> | 
+    </p>
+     
+
+
+    
+
+
+         
+         
+         
+
+         <p><h1>Drawing lindenmayer systems</h1>
+<h2>What?</h2>
+<p>Lindenmayer systems (l-systems), are iterations of strings generated through defined rules. An example could lookas follows:</p>
+<p>Constants = <em>A, B</em></p>
+<p>Rules = (<strong>A-&gt;AB</strong>),(<strong>B-&gt;BB</strong>)</p>
+<p>Initial string = A</p>
+<p>We then repeatedly apply these rules to the string, transforming it.</p>
+<p>|Iteration|   |
+|---|---|---|---|
+| 0 | A |
+| 1 | AB |
+| 2 | ABBB |
+| 3 | 0 |</p>
+<p>These strings can in turn be used to represent different systems. The example, for example, can be used to generate the following:</p>
+<p>In this case, A means branch to the left, and B means branch to the right. The degree of this turn is a constant, but it doesn't have to be that way. We can introduce constants which </p>
+<h2>Why?</h2>
+<p>L-systems can be used to model many natural phenomena, such as intricate plants and flowers. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems. </p>
+<h2>How?</h2>
+<p>The program was originally written in Python using the Processing[] library, but has been translated to Javascript and P5.JS for the sake of embedding.</p></p>
+         
+         <!--          <iframe src=https://editor.p5js.org/baltasaur/embed/LU5R2vEzw width="400" height="500"></iframe>
+         <hr style="border-width: thin; border-color: black; padding-bottom: 4%;">
+ -->
+     </div>
+ </div>
+</div>
+</div>
+<!-- End of Main Content --> 
+   
+    
+<!--  Footer   -->
+    <!-- <div class="container" id="footer">
+        <ul>
+            <li>
+                <a href="mailto:livia.jakob@geo-blog.com">
+                    <img src="theme/img/email.png" style="height:28px" class="icon">
+                </a> 
+            
+            </li>   
+            <li><b>|</b></li>
+            <li>                
+                <a target="_blank" href="https://www.linkedin.com/in/livia-jakob/">
+                    <img src="theme/img/linkedin.png" style="height:25px" class="icon">
+                </a> 
+            </li>
+            <li><b>|</b></li>
+                <li>
+                <a target="_blank" href="https://github.com/liviajakob/">
+                    <img src="theme/img/github.png" style="height:28px" class="icon">
+                </a>
+            </li>
+        </ul>
+    </div> -->
+    
+<!--  End Footer  -->
+    
+</body>
+</html>
