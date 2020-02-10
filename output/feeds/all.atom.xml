@@ -11,37 +11,18 @@
 &lt;p&gt;These rules can be condensed to &lt;strong&gt;B3/S23&lt;/strong&gt;, meaning dead cells with &lt;strong&gt;3&lt;/strong&gt; neighbours are born, and living cells with &lt;strong&gt;2&lt;/strong&gt; or &lt;strong&gt;3&lt;/strong&gt; neighbours survive. All other cells die.  &lt;/p&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
 &lt;p&gt;Cellular automata exhibit many interesting properties, and are studied as discrete systems. Much attention is given to the evolution of specific patterns, and the classification of different &lt;em&gt;CA&lt;/em&gt; based on these patterns.&lt;/p&gt;
-&lt;p&gt;In the model above, three types of patterns can be observed.&lt;/p&gt;
+&lt;p&gt;In the model below, three types of patterns can be observed.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Stills&lt;/strong&gt; - Patterns that don't change by themselves.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;!-- Example:
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 0 | --&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Oscillators&lt;/strong&gt; - Changing patterns that return to the same shape given enough iterations.  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;!-- Example:
-
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 | --&gt;
-
-&lt;p&gt;&lt;em&gt;See section 1 for pattern&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Spaceships&lt;/strong&gt; - Oscillating patterns which traverse the cell space.
-&lt;!-- 
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 0 | 0 |
-| 1 | 0 | 0 | 0 |
-| 1 | 1 | 1 | 0 | --&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stills&lt;/strong&gt; - Patterns that don't change by themselves.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Oscillators&lt;/strong&gt; - Changing patterns that return to the same shape given enough iterations.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Spaceships&lt;/strong&gt; - Oscillating patterns which traverse the cell space.
+| 0 | --&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p style="text-align:center"&gt;   
 This project originated as an attempt to make reusable program that generated cellular automata could.
@@ -54,7 +35,10 @@ This project originated as an attempt to make reusable program that generated ce
 &lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"&gt;&lt;/iframe&gt; 
 &lt;/p&gt;&lt;/p&gt;
 &lt;!-- ## Sources
-&lt;sup&gt;1&lt;/sup&gt; [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --&gt;</content><category term="Python"></category><category term="fun with fungi"></category><category term="js"></category><category term="python"></category></entry><entry><title>Lindenmayer Systems</title><link href="/lsystem.html" rel="alternate"></link><published>2019-02-10T00:00:00-03:00</published><updated>2019-02-10T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-10:/lsystem.html</id><summary type="html">&lt;p&gt;An interactive cellular automata written in javascript&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Drawing lindenmayer systems&lt;/h1&gt;
+&lt;sup&gt;1&lt;/sup&gt; [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --&gt;</content><category term="Python"></category><category term="fun with fungi"></category><category term="js"></category><category term="python"></category></entry><entry><title>18th of October in Santiago</title><link href="/chile.html" rel="alternate"></link><published>2019-02-10T00:00:00-03:00</published><updated>2019-02-10T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-10:/chile.html</id><summary type="html">&lt;p&gt;A personal account of October 2019 in Chile&lt;/p&gt;</summary><content type="html">&lt;h1&gt;18th of October&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;This is mostly concerning my personal experiences. I hope to to write a larger analytic piece on the topic, and will post it here if it gets done.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Santiago&lt;/h2&gt;
+&lt;p&gt;After 14 years of &lt;/p&gt;</content><category term="Python"></category><category term="politics"></category></entry><entry><title>Lindenmayer Systems</title><link href="/lsystem.html" rel="alternate"></link><published>2019-02-10T00:00:00-03:00</published><updated>2019-02-10T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-10:/lsystem.html</id><summary type="html">&lt;p&gt;Various interactive lsystems for p5&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Drawing lindenmayer systems&lt;/h1&gt;
 &lt;h2&gt;What?&lt;/h2&gt;
 &lt;p&gt;Lindenmayer systems (l-systems), are iterations of strings generated through defined rules. An example could lookas follows:&lt;/p&gt;
 &lt;p&gt;Constants = &lt;em&gt;A, B&lt;/em&gt;&lt;/p&gt;
@@ -70,10 +54,10 @@ This project originated as an attempt to make reusable program that generated ce
 &lt;p&gt;These strings can in turn be used to represent different systems. The example, for example, was Lindenmayer's model of algae growth.&lt;/p&gt;
 &lt;p&gt;In this case, A means branch to the left, and B means branch to the right.&lt;/p&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
-&lt;p&gt;L-systems can be used to model many natural phenomena, such as intricate plants and flowers. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems. &lt;/p&gt;
+&lt;p&gt;L-systems can be used to model many natural phenomena, such as intricate biological systems. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.&lt;/p&gt;
 &lt;h2&gt;How?&lt;/h2&gt;
-&lt;p&gt;The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding.&lt;/p&gt;
+&lt;p&gt;The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.&lt;/p&gt;
 &lt;h2&gt;Results&lt;/h2&gt;
 &lt;p&gt;&lt;p style="text-align:center"&gt; &lt;br&gt;
-&lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/sketches/Ojb2DqkV"&gt;&lt;/iframe&gt; 
+&lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/Ojb2DqkV"&gt;&lt;/iframe&gt; 
 &lt;/p&gt;&lt;/p&gt;</content><category term="Python"></category><category term="natural patterns"></category><category term="js"></category><category term="python"></category></entry></feed>

@@ -3,9 +3,9 @@ Date: 2019
 Category: Python
 Tags: natural patterns, js, python
 Slug: lsystem
-featured_image: img/dog2.jpeg
+featured_image: img/plant.png
 Author: baltasar
-Summary: An interactive cellular automata written in javascript 
+Summary: Various interactive lsystems for p5
 p5link: https://editor.p5js.org/baltasaur/embed/LU5R2vEzw
 
 # Drawing lindenmayer systems
@@ -34,12 +34,12 @@ These strings can in turn be used to represent different systems. The example, f
 In this case, A means branch to the left, and B means branch to the right.
 
 ## Why?
-L-systems can be used to model many natural phenomena, such as intricate plants and flowers. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems. 
+L-systems can be used to model many natural phenomena, such as intricate biological systems. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.
 
 ## How?
-The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding.
+The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.
 
 ## Results
 <p style="text-align:center">	
-<iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/sketches/Ojb2DqkV"></iframe> 
+<iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/Ojb2DqkV"></iframe> 
 </p>

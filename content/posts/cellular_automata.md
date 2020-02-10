@@ -25,37 +25,14 @@ These rules can be condensed to **B3/S23**, meaning dead cells with **3** neighb
 ## Why?
 Cellular automata exhibit many interesting properties, and are studied as discrete systems. Much attention is given to the evolution of specific patterns, and the classification of different *CA* based on these patterns.
 
-In the model above, three types of patterns can be observed.
+In the model below, three types of patterns can be observed.
 
 1. **Stills** - Patterns that don't change by themselves.
 
-<!-- Example:
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 0 | -->
-
-    
 2. **Oscillators** - Changing patterns that return to the same shape given enough iterations.  
 
-<!-- Example:
-
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 | -->
-
-*See section 1 for pattern*
-
-1. **Spaceships** - Oscillating patterns which traverse the cell space.
-<!-- 
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 0 | 0 |
-| 1 | 0 | 0 | 0 |
-| 1 | 1 | 1 | 0 | -->
+3. **Spaceships** - Oscillating patterns which traverse the cell space.
+| 0 | -->
 
 <p style="text-align:center">	
 This project originated as an attempt to make reusable program that generated cellular automata could.
