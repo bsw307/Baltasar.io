@@ -3,7 +3,7 @@ Date: 2019
 Category: Python
 Tags: fun with fungi, js, python
 Slug: automata
-featured_image: img/dog2.jpeg
+featured_image: img/sierpinski.png
 Author: baltasar
 Summary: An interactive cellular automata written in javascript 
 p5link: https://editor.p5js.org/baltasaur/embed/LU5R2vEzw
@@ -19,24 +19,6 @@ This project grew out of my fascination with Conway's "Game of life", which is a
 3. Any live cell with more than three live neighbours dies, as if by overpopulation.
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-Following is an example of two frames from a small cellular automaton using these rules.
-
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 0 | 0 | 0 |
-| 1 | 1 | 1 | 0 |
-| 0 | 0 | 0 | 0 |
-| 0 | 0 | 0 | 0 |
-
-Becomes
-
-|   |   |   |   |
-|---|---|---|---|
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 |
-| 0 | 0 | 0 | 0 |
-
 These rules can be condensed to **B3/S23**, meaning dead cells with **3** neighbours are born, and living cells with **2** or **3** neighbours survive. All other cells die.  
 
 
@@ -47,35 +29,33 @@ In the model above, three types of patterns can be observed.
 
 1. **Stills** - Patterns that don't change by themselves.
 
-Example:
+<!-- Example:
 |   |   |   |   |
 |---|---|---|---|
 | 0 | 1 | 1 | 0 |
 | 1 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 0 | -->
 
     
 2. **Oscillators** - Changing patterns that return to the same shape given enough iterations.  
-![](../img/Oscillator1.png)
-![](../img/Oscillator2.png)
 
-Example:
+<!-- Example:
 
 |   |   |   |   |
 |---|---|---|---|
 | 0 | 1 | 0 | 0 |
 | 0 | 1 | 0 | 0 |
-| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 | -->
 
 *See section 1 for pattern*
 
-3. **Spaceships** - Oscillating patterns which traverse the cell space.
-
+1. **Spaceships** - Oscillating patterns which traverse the cell space.
+<!-- 
 |   |   |   |   |
 |---|---|---|---|
 | 0 | 1 | 0 | 0 |
 | 1 | 0 | 0 | 0 |
-| 1 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 0 | -->
 
 <p style="text-align:center">	
 This project originated as an attempt to make reusable program that generated cellular automata could.
@@ -89,5 +69,5 @@ The program below is written in javascript using the P5.JS library, which enable
 <iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"></iframe> 
 </p>
 
-## Sources
-<sup>1</sup> [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+<!-- ## Sources
+<sup>1</sup> [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) -->

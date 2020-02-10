@@ -27,15 +27,19 @@ We then repeatedly apply these rules to the string, transforming it.
 | 0 | A |
 | 1 | AB |
 | 2 | ABBB |
-| 3 | 0 |
+| 3 | ABBBBB |
 
-These strings can in turn be used to represent different systems. The example, for example, can be used to generate the following:
+These strings can in turn be used to represent different systems. The example, for example, was Lindenmayer's model of algae growth.
 
-
-In this case, A means branch to the left, and B means branch to the right. The degree of this turn is a constant, but it doesn't have to be that way. We can introduce constants which 
+In this case, A means branch to the left, and B means branch to the right.
 
 ## Why?
 L-systems can be used to model many natural phenomena, such as intricate plants and flowers. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems. 
 
 ## How?
-The program was originally written in Python using the Processing[] library, but has been translated to Javascript and P5.JS for the sake of embedding.
+The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding.
+
+## Results
+<p style="text-align:center">	
+<iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/sketches/Ojb2DqkV"></iframe> 
+</p>

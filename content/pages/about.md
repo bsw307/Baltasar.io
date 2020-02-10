@@ -1,5 +1,5 @@
 Title: About
-Date: 2010-12-03 10:20
+Date: 2020
 Slug: welcome
 Tags: welcome
 Category: Intro
@@ -8,4 +8,4 @@ Author: baltasar
 
 # About this website
 
-Sequoia is very cute
+This purpose of this website is to host personal projects related to themes which interest me.
