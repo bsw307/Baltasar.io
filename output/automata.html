@@ -38,6 +38,9 @@
             <li><b>|</b></li>
             <li>
                 <a href="/welcome.html">About</a></li>
+            <li><b>|</b></li>
+            <li>
+                <a href="/upcoming.html">Cellular automata</a></li>
     </ul>
   </div>
 </nav>
@@ -87,80 +90,6 @@
 <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
 <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
 </ol>
-<p>Following is an example of two frames from a small cellular automaton using these rules.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<p>Becomes</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
 <p>These rules can be condensed to <strong>B3/S23</strong>, meaning dead cells with <strong>3</strong> neighbours are born, and living cells with <strong>2</strong> or <strong>3</strong> neighbours survive. All other cells die.  </p>
 <h2>Why?</h2>
 <p>Cellular automata exhibit many interesting properties, and are studied as discrete systems. Much attention is given to the evolution of specific patterns, and the classification of different <em>CA</em> based on these patterns.</p>
@@ -168,82 +97,34 @@
 <ol>
 <li><strong>Stills</strong> - Patterns that don't change by themselves.</li>
 </ol>
-<p>Example:
+<!-- Example:
 |   |   |   |   |
 |---|---|---|---|
 | 0 | 1 | 1 | 0 |
 | 1 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 0 |</p>
+| 0 | 1 | 1 | 0 | -->
+
 <ol>
-<li><strong>Oscillators</strong> - Changing patterns that return to the same shape given enough iterations.<br>
-<img alt="" src="../img/Oscillator1.png">
-<img alt="" src="../img/Oscillator2.png"></li>
+<li><strong>Oscillators</strong> - Changing patterns that return to the same shape given enough iterations.  </li>
 </ol>
-<p>Example:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
+<!-- Example:
+
+|   |   |   |   |
+|---|---|---|---|
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 | -->
+
 <p><em>See section 1 for pattern</em></p>
 <ol>
-<li><strong>Spaceships</strong> - Oscillating patterns which traverse the cell space.</li>
+<li><strong>Spaceships</strong> - Oscillating patterns which traverse the cell space.
+<!-- 
+|   |   |   |   |
+|---|---|---|---|
+| 0 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | --></li>
 </ol>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
 <p style="text-align:center">   
 This project originated as an attempt to make reusable program that generated cellular automata could.
 </p>
@@ -254,8 +135,8 @@ This project originated as an attempt to make reusable program that generated ce
 <p><p style="text-align:center"> <br>
 <iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"></iframe> 
 </p></p>
-<h2>Sources</h2>
-<p><sup>1</sup> <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a></p></p>
+<!-- ## Sources
+<sup>1</sup> [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --></p>
          
          <!--          <iframe src=https://editor.p5js.org/baltasaur/embed/LU5R2vEzw width="400" height="500"></iframe>
          <hr style="border-width: thin; border-color: black; padding-bottom: 4%;">

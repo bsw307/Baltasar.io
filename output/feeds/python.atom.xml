@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Sequoia - Python</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2019-02-10T00:00:00-03:00</updated><entry><title>Cellular automata</title><link href="/automata.html" rel="alternate"></link><published>2019-02-10T00:00:00-03:00</published><updated>2019-02-10T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-10:/automata.html</id><summary type="html">&lt;p&gt;An interactive cellular automata written in javascript&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Generalized cellular automata in two dimensions&lt;/h1&gt;
+&lt;h2&gt;What?&lt;/h2&gt;
+&lt;p&gt;This project grew out of my fascination with Conway's "Game of life", which is a particular implementation of a cellular automaton(&lt;em&gt;CA&lt;/em&gt;). The model consists of a grid of cells, each of which can be in one of two states: dead or alive, represented by 0 and 1, respectively. Rules are then applied to see which cells will be dead and which will be alive in the next frame. In the case of the "Game of life", &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules"&gt;four rules&lt;/a&gt; are used.&lt;sup&gt;1&lt;/sup&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Any live cell with fewer than two live neighbours dies, as if by underpopulation.&lt;/li&gt;
+&lt;li&gt;Any live cell with two or three live neighbours lives on to the next generation.&lt;/li&gt;
+&lt;li&gt;Any live cell with more than three live neighbours dies, as if by overpopulation.&lt;/li&gt;
+&lt;li&gt;Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These rules can be condensed to &lt;strong&gt;B3/S23&lt;/strong&gt;, meaning dead cells with &lt;strong&gt;3&lt;/strong&gt; neighbours are born, and living cells with &lt;strong&gt;2&lt;/strong&gt; or &lt;strong&gt;3&lt;/strong&gt; neighbours survive. All other cells die.  &lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;Cellular automata exhibit many interesting properties, and are studied as discrete systems. Much attention is given to the evolution of specific patterns, and the classification of different &lt;em&gt;CA&lt;/em&gt; based on these patterns.&lt;/p&gt;
+&lt;p&gt;In the model above, three types of patterns can be observed.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Stills&lt;/strong&gt; - Patterns that don't change by themselves.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- Example:
+|   |   |   |   |
+|---|---|---|---|
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | --&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Oscillators&lt;/strong&gt; - Changing patterns that return to the same shape given enough iterations.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- Example:
+
+|   |   |   |   |
+|---|---|---|---|
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 | --&gt;
+
+&lt;p&gt;&lt;em&gt;See section 1 for pattern&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Spaceships&lt;/strong&gt; - Oscillating patterns which traverse the cell space.
+&lt;!-- 
+|   |   |   |   |
+|---|---|---|---|
+| 0 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | --&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p style="text-align:center"&gt;   
+This project originated as an attempt to make reusable program that generated cellular automata could.
+&lt;/p&gt;
+
+&lt;h2&gt;How?&lt;/h2&gt;
+&lt;p&gt;The program below is written in javascript using the P5.JS library, which enables drawing the cells as well as embedding the file on this page.&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;p style="text-align:center"&gt; &lt;br&gt;
+&lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"&gt;&lt;/iframe&gt; 
+&lt;/p&gt;&lt;/p&gt;
+&lt;!-- ## Sources
+&lt;sup&gt;1&lt;/sup&gt; [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --&gt;</content><category term="Python"></category><category term="fun with fungi"></category><category term="js"></category><category term="python"></category></entry><entry><title>Lindenmayer Systems</title><link href="/lsystem.html" rel="alternate"></link><published>2019-02-10T00:00:00-03:00</published><updated>2019-02-10T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-10:/lsystem.html</id><summary type="html">&lt;p&gt;An interactive cellular automata written in javascript&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Drawing lindenmayer systems&lt;/h1&gt;
+&lt;h2&gt;What?&lt;/h2&gt;
+&lt;p&gt;Lindenmayer systems (l-systems), are iterations of strings generated through defined rules. An example could lookas follows:&lt;/p&gt;
+&lt;p&gt;Constants = &lt;em&gt;A, B&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Rules = (&lt;strong&gt;A-&amp;gt;AB&lt;/strong&gt;),(&lt;strong&gt;B-&amp;gt;BB&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Initial string = A&lt;/p&gt;
+&lt;p&gt;We then repeatedly apply these rules to the string, transforming it.&lt;/p&gt;
+&lt;p&gt;|Iteration|   |
+|---|---|---|---|
+| 0 | A |
+| 1 | AB |
+| 2 | ABBB |
+| 3 | ABBBBB |&lt;/p&gt;
+&lt;p&gt;These strings can in turn be used to represent different systems. The example, for example, was Lindenmayer's model of algae growth.&lt;/p&gt;
+&lt;p&gt;In this case, A means branch to the left, and B means branch to the right.&lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;L-systems can be used to model many natural phenomena, such as intricate plants and flowers. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems. &lt;/p&gt;
+&lt;h2&gt;How?&lt;/h2&gt;
+&lt;p&gt;The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding.&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;p style="text-align:center"&gt; &lt;br&gt;
+&lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/sketches/Ojb2DqkV"&gt;&lt;/iframe&gt; 
+&lt;/p&gt;&lt;/p&gt;</content><category term="Python"></category><category term="natural patterns"></category><category term="js"></category><category term="python"></category></entry></feed>
