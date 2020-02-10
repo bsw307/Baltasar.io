@@ -58,6 +58,7 @@ This project originated as an attempt to make reusable program that generated ce
 &lt;h2&gt;How?&lt;/h2&gt;
 &lt;p&gt;The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.&lt;/p&gt;
 &lt;h2&gt;Results&lt;/h2&gt;
-&lt;p&gt;&lt;p style="text-align:center"&gt; &lt;br&gt;
+&lt;p&gt;Click repeatedly on any button to see the development of three types of systems.
+&lt;p style="text-align:center"&gt; &lt;br&gt;
 &lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/Ojb2DqkV"&gt;&lt;/iframe&gt; 
 &lt;/p&gt;&lt;/p&gt;</content><category term="Python"></category><category term="natural patterns"></category><category term="js"></category><category term="python"></category></entry></feed>

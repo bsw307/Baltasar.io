@@ -40,6 +40,7 @@ L-systems can be used to model many natural phenomena, such as intricate biologi
 The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.
 
 ## Results
+Click repeatedly on any button to see the development of three types of systems.
 <p style="text-align:center">	
 <iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/Ojb2DqkV"></iframe> 
 </p>

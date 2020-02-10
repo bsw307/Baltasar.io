@@ -1,4 +1,4 @@
-Title: Cellular automata
+Title: Upcoming
 Date: 2019
 Tags: upcoming
 Slug: upcoming

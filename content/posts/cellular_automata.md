@@ -3,7 +3,7 @@ Date: 2019
 Category: Python
 Tags: fun with fungi, js, python
 Slug: automata
-featured_image: img/sierpinski.png
+featured_image: img/cell.png
 Author: baltasar
 Summary: An interactive cellular automata written in javascript 
 p5link: https://editor.p5js.org/baltasaur/embed/LU5R2vEzw
