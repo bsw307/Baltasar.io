@@ -32,11 +32,6 @@ In the model below, three types of patterns can be observed.
 2. **Oscillators** - Changing patterns that return to the same shape given enough iterations.  
 
 3. **Spaceships** - Oscillating patterns which traverse the cell space.
-| 0 | -->
-
-<p style="text-align:center">	
-This project originated as an attempt to make reusable program that generated cellular automata could.
-</p>
 
 ## How?
 The program below is written in javascript using the P5.JS library, which enables drawing the cells as well as embedding the file on this page.

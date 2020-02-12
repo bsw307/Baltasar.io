@@ -20,14 +20,9 @@
 &lt;p&gt;&lt;strong&gt;Oscillators&lt;/strong&gt; - Changing patterns that return to the same shape given enough iterations.  &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Spaceships&lt;/strong&gt; - Oscillating patterns which traverse the cell space.
-| 0 | --&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spaceships&lt;/strong&gt; - Oscillating patterns which traverse the cell space.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p style="text-align:center"&gt;   
-This project originated as an attempt to make reusable program that generated cellular automata could.
-&lt;/p&gt;
-
 &lt;h2&gt;How?&lt;/h2&gt;
 &lt;p&gt;The program below is written in javascript using the P5.JS library, which enables drawing the cells as well as embedding the file on this page.&lt;/p&gt;
 &lt;h2&gt;Results&lt;/h2&gt;
@@ -35,26 +30,60 @@ This project originated as an attempt to make reusable program that generated ce
 &lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/LU5R2vEzw"&gt;&lt;/iframe&gt; 
 &lt;/p&gt;&lt;/p&gt;
 &lt;!-- ## Sources
-&lt;sup&gt;1&lt;/sup&gt; [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --&gt;</content><category term="Python"></category><category term="fun with fungi"></category><category term="js"></category><category term="python"></category></entry><entry><title>18th of October in Santiago</title><link href="/chile.html" rel="alternate"></link><published>2019-02-12T00:00:00-03:00</published><updated>2019-02-12T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-12:/chile.html</id><summary type="html">&lt;p&gt;A personal account of October 2019 in Chile&lt;/p&gt;</summary><content type="html">&lt;h1&gt;18th of October&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;This is mostly concerning my personal experiences. I hope to to write a larger analytic piece on the topic, and will post it here if it gets done.&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Santiago&lt;/h2&gt;
-&lt;p&gt;After 14 years of &lt;/p&gt;</content><category term="Python"></category><category term="politics"></category></entry><entry><title>Lindenmayer Systems</title><link href="/lsystem.html" rel="alternate"></link><published>2019-02-12T00:00:00-03:00</published><updated>2019-02-12T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-12:/lsystem.html</id><summary type="html">&lt;p&gt;Various interactive lsystems for p5&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Drawing lindenmayer systems&lt;/h1&gt;
+&lt;sup&gt;1&lt;/sup&gt; [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) --&gt;</content><category term="Python"></category><category term="fun with fungi"></category><category term="js"></category><category term="python"></category></entry><entry><title>Hilbert curve</title><link href="/hilbert.html" rel="alternate"></link><published>2019-02-12T00:00:00-03:00</published><updated>2019-02-12T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-12:/hilbert.html</id><summary type="html">&lt;p&gt;Generating Hilbert curves&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Generating Hilbert curves&lt;/h1&gt;
 &lt;h2&gt;What?&lt;/h2&gt;
-&lt;p&gt;Lindenmayer systems (l-systems), are iterations of strings generated through defined rules. An example could lookas follows:&lt;/p&gt;
+&lt;p&gt;Hilbert curves are fascinating, space-filling fractals. That means that they can be used to map from 2D to 1D spaces, while preserving nearness. That means that, if two points are close to each other in 2D space, they will be close to each other on the resulting 1D space as well. This gives Hilbert curves immense usefullness in many areas, such as image processing. &lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;This project was mostly inspired by the technical challenge of drawing Hilbert curves.&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p style="text-align:center"&gt;   
+&lt;iframe style="width:400px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/baltasaur/embed/G7uKADic"&gt;&lt;/iframe&gt; 
+&lt;/p&gt;</content><category term="Python"></category><category term="mathematics"></category><category term="physics"></category><category term="computer-science"></category></entry><entry><title>Lindenmayer Systems</title><link href="/lsystem.html" rel="alternate"></link><published>2019-02-12T00:00:00-03:00</published><updated>2019-02-12T00:00:00-03:00</updated><author><name>baltasar</name></author><id>tag:None,2019-02-12:/lsystem.html</id><summary type="html">&lt;p&gt;Various interactive lsystems for p5&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Drawing lindenmayer systems&lt;/h1&gt;
+&lt;h2&gt;What?&lt;/h2&gt;
+&lt;p&gt;Lindenmayer systems (l-systems), are rewriting systems predicated on defined rules. A simple example could look as follows:&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Constants = &lt;em&gt;A, B&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Rules = (&lt;strong&gt;A-&amp;gt;AB&lt;/strong&gt;),(&lt;strong&gt;B-&amp;gt;BB&lt;/strong&gt;)&lt;/p&gt;
-&lt;p&gt;Initial string = A&lt;/p&gt;
+&lt;p&gt;Starting string = A&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;We then repeatedly apply these rules to the string, transforming it.&lt;/p&gt;
-&lt;p&gt;|Iteration|   |
-|---|---|---|---|
-| 0 | A |
-| 1 | AB |
-| 2 | ABBB |
-| 3 | ABBBBB |&lt;/p&gt;
-&lt;p&gt;These strings can in turn be used to represent different systems. The example, for example, was Lindenmayer's model of algae growth.&lt;/p&gt;
-&lt;p&gt;In this case, A means branch to the left, and B means branch to the right.&lt;/p&gt;
+&lt;p&gt;Iterations&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1: A&lt;/p&gt;
+&lt;p&gt;2: AB&lt;/p&gt;
+&lt;p&gt;3: ABA&lt;/p&gt;
+&lt;p&gt;4: ABAABABA&lt;/p&gt;
+&lt;p&gt;5: ABAABABAABAAB&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These, seemingly, simple string can in turn be used to model a variety of systems. The example above, for instance, was used by the eponymous Lindenmayer's to model the growth of algae growth patterns. Interestingly enough, the number of letters in each iteration's string corresponds to the Fibonacci sequence.&lt;/p&gt;
+&lt;p&gt;To make things more interesting, we can add in more rules and symbols. To model more complex structures, such as plants, we also introduce the use of symbols which correspond to drawing angles.&lt;/p&gt;
+&lt;p&gt;At the bottom of this page, three models are available to try out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;System 1: Fractal binary tree&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This system has four symbols: &lt;strong&gt;1, 0, [, ]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The 1 and 0 both correspond to drawing a line, while [ corresponds to saving the location and turning 45° to the left, and ] to jumping back and turning to the right.&lt;/p&gt;
+&lt;p&gt;The rules are as follow:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1 -&amp;gt; 11&lt;/p&gt;
+&lt;p&gt;0 -&amp;gt; 1[0]0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;System 2: Dragon curve&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This system has four symbols: &lt;strong&gt;X,Y,F,+,-&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;F corresponds to drawing a line, + corresponds to turning 90° to the left, and - to turning to the right. X and Y serve no purpose in drawing the figure, only in creating the strings.&lt;/p&gt;
+&lt;p&gt;The rules are as follow:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;X -&amp;gt; X+YF+&lt;/p&gt;
+&lt;p&gt;Y -&amp;gt; −FX−Y&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;System 3: Fern&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This system has four symbols: &lt;strong&gt;X,F,+,-,[,]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A combination of the previous systems, F corresponds to drawing a line, while + corresponds to turning 25° to the left, and - to turning to the right. [ and ] correspond to saving and returning to a location, respectively. X serves no purpose in drawing the system, only in creating the strings.&lt;/p&gt;
+&lt;p&gt;The rules are as follow:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;X -&amp;gt; F+[[X]-X]-F[-FX]+X&lt;/p&gt;
+&lt;p&gt;F -&amp;gt; FF&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
-&lt;p&gt;L-systems can be used to model many natural phenomena, such as intricate biological systems. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.&lt;/p&gt;
+&lt;p&gt;L-systems can be used to model many natural phenomena, such as plants and bacteria. They can also be used to generate mathematical fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.&lt;/p&gt;
 &lt;h2&gt;How?&lt;/h2&gt;
 &lt;p&gt;The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.&lt;/p&gt;
 &lt;h2&gt;Results&lt;/h2&gt;

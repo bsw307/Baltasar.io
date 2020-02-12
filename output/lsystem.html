@@ -83,21 +83,50 @@
 
          <p><h1>Drawing lindenmayer systems</h1>
 <h2>What?</h2>
-<p>Lindenmayer systems (l-systems), are iterations of strings generated through defined rules. An example could lookas follows:</p>
+<p>Lindenmayer systems (l-systems), are rewriting systems predicated on defined rules. A simple example could look as follows:</p>
+<blockquote>
 <p>Constants = <em>A, B</em></p>
 <p>Rules = (<strong>A-&gt;AB</strong>),(<strong>B-&gt;BB</strong>)</p>
-<p>Initial string = A</p>
+<p>Starting string = A</p>
+</blockquote>
 <p>We then repeatedly apply these rules to the string, transforming it.</p>
-<p>|Iteration|   |
-|---|---|---|---|
-| 0 | A |
-| 1 | AB |
-| 2 | ABBB |
-| 3 | ABBBBB |</p>
-<p>These strings can in turn be used to represent different systems. The example, for example, was Lindenmayer's model of algae growth.</p>
-<p>In this case, A means branch to the left, and B means branch to the right.</p>
+<p>Iterations</p>
+<blockquote>
+<p>1: A</p>
+<p>2: AB</p>
+<p>3: ABA</p>
+<p>4: ABAABABA</p>
+<p>5: ABAABABAABAAB</p>
+</blockquote>
+<p>These, seemingly, simple string can in turn be used to model a variety of systems. The example above, for instance, was used by the eponymous Lindenmayer's to model the growth of algae growth patterns. Interestingly enough, the number of letters in each iteration's string corresponds to the Fibonacci sequence.</p>
+<p>To make things more interesting, we can add in more rules and symbols. To model more complex structures, such as plants, we also introduce the use of symbols which correspond to drawing angles.</p>
+<p>At the bottom of this page, three models are available to try out.</p>
+<p><strong>System 1: Fractal binary tree</strong></p>
+<p>This system has four symbols: <strong>1, 0, [, ]</strong></p>
+<p>The 1 and 0 both correspond to drawing a line, while [ corresponds to saving the location and turning 45° to the left, and ] to jumping back and turning to the right.</p>
+<p>The rules are as follow:</p>
+<blockquote>
+<p>1 -&gt; 11</p>
+<p>0 -&gt; 1[0]0</p>
+</blockquote>
+<p><strong>System 2: Dragon curve</strong></p>
+<p>This system has four symbols: <strong>X,Y,F,+,-</strong></p>
+<p>F corresponds to drawing a line, + corresponds to turning 90° to the left, and - to turning to the right. X and Y serve no purpose in drawing the figure, only in creating the strings.</p>
+<p>The rules are as follow:</p>
+<blockquote>
+<p>X -&gt; X+YF+</p>
+<p>Y -&gt; −FX−Y</p>
+</blockquote>
+<p><strong>System 3: Fern</strong></p>
+<p>This system has four symbols: <strong>X,F,+,-,[,]</strong></p>
+<p>A combination of the previous systems, F corresponds to drawing a line, while + corresponds to turning 25° to the left, and - to turning to the right. [ and ] correspond to saving and returning to a location, respectively. X serves no purpose in drawing the system, only in creating the strings.</p>
+<p>The rules are as follow:</p>
+<blockquote>
+<p>X -&gt; F+[[X]-X]-F[-FX]+X</p>
+<p>F -&gt; FF</p>
+</blockquote>
 <h2>Why?</h2>
-<p>L-systems can be used to model many natural phenomena, such as intricate biological systems. They can also be used to generate fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.</p>
+<p>L-systems can be used to model many natural phenomena, such as plants and bacteria. They can also be used to generate mathematical fractals, such as the Sierpinski triangle. The aim of this project was to make a program that could display all different types of systems.</p>
 <h2>How?</h2>
 <p>The program was originally written in Python using the Processing library, but has been translated to Javascript and P5.JS for the sake of embedding it on this site.</p>
 <h2>Results</h2>
