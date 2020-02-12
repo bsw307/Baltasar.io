@@ -3,7 +3,7 @@ Date: 2019
 Category: Python
 Tags: politics
 Slug: chile
-featured_image: img/dog2.jpeg
+featured_image: img/chileprotest.jpg
 Author: baltasar
 Summary: A personal account of October 2019 in Chile
 
