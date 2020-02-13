@@ -1,10 +1,10 @@
 Title: Chile in pictures
 Date: 2019
 Category: Politics
-Tags: fun with fungi, js, python
 Slug: chile
 featured_image: img/chileprotest.png
 Author: baltasar
+gallery:chile
 Summary: Images taken from the protests in Chile 2019/2020 
 
 # El pueblo unido: Images from the protests in Chile

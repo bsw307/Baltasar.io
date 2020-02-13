@@ -14,6 +14,11 @@ PAGE_PATHS = ['pages']
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
+PLUGIN_PATHS = ['plugins/pelican-plugins']
+PLUGINS = ['gallery']
+
+GALLERY_PATH = 'img/gallery/'
+
 TAG_SAVE_AS = '{slug}.html'
 TAG_URL = '{slug}.html'
 
