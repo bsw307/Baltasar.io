@@ -2,7 +2,7 @@ Title: Chile in pictures
 Date: 2019
 Category: Politics
 Slug: chile
-featured_image: img/chileprotest.png
+featured_image: img/chileprotest.jpg
 Author: baltasar
 gallery:chile
 Summary: Images taken from the protests in Chile 2019/2020 
