@@ -97,6 +97,14 @@ pillow = "*"
 
 [[package]]
 category = "main"
+description = "To simplify exif manipulations with python. Writing, reading, and more..."
+name = "piexif"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "1.1.3"
+
+[[package]]
+category = "main"
 description = "Python Imaging Library (Fork)"
 name = "pillow"
 optional = false
@@ -147,7 +155,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.1.1"
 
 [metadata]
-content-hash = "c0f21ad6cb0cf6900cab54ec416c4b2ca3cfb9df74866e6f80e765b959fd47c0"
+content-hash = "9d81a4e21b66de89e974d736dcc8e806ca5a1af65f1d25afb98e48a3e9d5f2a0"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -207,6 +215,10 @@ pelican = [
 pelican-albums = [
     {file = "pelican-albums-0.6.1.tar.gz", hash = "sha256:3c8fb3bfb587221d8a99744b58a794940d87c8e56d02e8aa608eba7b09a02451"},
     {file = "pelican_albums-0.6.1-py3-none-any.whl", hash = "sha256:372065129b86a8d100ecd5b6276ca330d8b859f0c37a983da9d8cf0134a82de5"},
+]
+piexif = [
+    {file = "piexif-1.1.3-py2.py3-none-any.whl", hash = "sha256:3bc435d171720150b81b15d27e05e54b8abbde7b4242cddd81ef160d283108b6"},
+    {file = "piexif-1.1.3.zip", hash = "sha256:83cb35c606bf3a1ea1a8f0a25cb42cf17e24353fd82e87ae3884e74a302a5f1b"},
 ]
 pillow = [
     {file = "Pillow-7.0.0-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:5f3546ceb08089cedb9e8ff7e3f6a7042bb5b37c2a95d392fb027c3e53a2da00"},

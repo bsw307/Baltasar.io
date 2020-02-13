@@ -4,7 +4,7 @@ Category: Politics
 Slug: chile
 featured_image: img/chileprotest.jpg
 Author: baltasar
-gallery:chile
+gallery: {photo}pictures
 Summary: Images taken from the protests in Chile 2019/2020 
 
 # El pueblo unido: Images from the protests in Chile

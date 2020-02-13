@@ -54,7 +54,23 @@
 
          <p>{{ article.content }}</p>
          
-        
+         {% if article.photo_gallery %}
+         <div class="gallery">
+                 {% for title, gallery in article.photo_gallery %}
+                     <h1>{{ title }}</h1>
+                         {% for name, photo, thumb, exif, caption in gallery %}
+                                 <a href="{{ SITEURL }}/{{ photo }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img src="{{ SITEURL }}/{{ thumb }}"></a>
+                         {% endfor %}
+                 {% endfor %}
+         </div>
+         {% endif %}
+
+         <!-- <h2><a href="{{ SITEURL }}/pages/gallery.html#{{ article.album }}">{{ article.album }}</a></h2>
+    <ul>
+	{% for image in article.galleryimages %}
+	<li><a class="{{ article.album }} cboxElement" href="{{ SITEURL }}/static/images/gallery/{{ article.album }}/{{ image }}"><img src="{{ SITEURL }}/static/images/gallery200x200/{{ article.album }}/{{ image }}"></a></li>
+	{% endfor %}
+    </ul> -->
          <!-- {% if  article.p5link %}
          <iframe src={{article.p5link}} width="400" height="500"></iframe>
          <hr style="border-width: thin; border-color: black; padding-bottom: 4%;">
