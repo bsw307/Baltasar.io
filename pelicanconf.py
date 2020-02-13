@@ -18,7 +18,7 @@ PAGE_SAVE_AS = '{slug}.html'
 PLUGINS = ['pelican_albums']
 
 #GALLERY_PATH = 'img/gallery/'
-ALBUM_PATH = 'img/gallery'
+ALBUM_PATH = 'img/gallery/chile'
 THUMBNAIL_OUTPUT_PATH = 'img/thumbnails'
 
 TAG_SAVE_AS = '{slug}.html'
